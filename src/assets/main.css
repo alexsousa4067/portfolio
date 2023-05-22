@@ -1,0 +1,27 @@
+@import './base.css';
+
+img {
+    width: 100%;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.section-title {
+    font-size: 1.8em;
+    color: var(--color-heading);
+    display: block;
+    margin-bottom: 10px;
+}
