@@ -1,11 +1,13 @@
 {
+  "homepage": "https://alexsousa4067.github.io/portfolio",
   "name": "portfolio",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "vue": "^3.2.45",

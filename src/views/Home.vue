@@ -107,7 +107,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 100vh;
+    min-height: 60vh;
     background-color: var(--color-background-soft);
 }
 
@@ -164,6 +164,10 @@
     margin-bottom: 1%;
     padding: 10px;
     border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.skill img {
     border-radius: 8px;
 }
 
