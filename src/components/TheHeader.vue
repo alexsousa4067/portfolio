@@ -12,9 +12,9 @@
             </div>
             <nav class="main-menu">
                 <ul>
-                    <li class="main-menu-item active">Home</li>
-                    <li class="main-menu-item">Projetos</li>
-                    <li class="main-menu-item">Contato</li>
+                    <li :class="['main-menu-item', $route.name === 'Home' ? 'active' : '']"><router-link :to="{name: 'Home'}">Home</router-link></li>
+                    <li :class="['main-menu-item', $route.name === 'Projects' ? 'active' : '']"><router-link :to="{name: 'Projects'}">Projetos</router-link></li>
+                    <li :class="['main-menu-item', $route.name === 'Contact' ? 'active' : '']">Contato</li>
                 </ul>
             </nav>
         </div>
@@ -43,6 +43,10 @@
     flex-wrap: nowrap;
     list-style: none;
     gap: 16px;
+}
+
+.main-menu a{
+    color: var(--vt-c-text-dark-2);
 }
 
 .main-menu-item {
