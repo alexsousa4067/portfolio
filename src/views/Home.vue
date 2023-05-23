@@ -44,7 +44,7 @@
 
     <section class="skills-section">
         <div class="container">
-            <h1 class="section-title">Habilidades</h1>
+            <h1 class="section-title">Linguagens</h1>
             <div class="skills">
                 <article class="skill">
                     <img src="@/assets/html.png"
@@ -146,21 +146,21 @@
 }
 
 .skills-section {
-    text-align: center;
+    //text-align: center;
     background-color: var(--color-background);
 }
 
 .skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    //justify-content: center;
     gap: 1%;
 }
 
 .skill {
     position: relative;
     text-align: center;
-    flex-basis: 24%;
+    flex-basis: 15%;
     margin-bottom: 1%;
     padding: 10px;
     border: 1px solid var(--color-border);
@@ -183,20 +183,31 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .service, .skill {
+    .service {
         flex-basis: 32%;
+    }
+    .skill {
+        flex-basis: 24%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .service, .skill {
+    .service {
         flex-basis: 49%;
+    }
+
+    .skill {
+        flex-basis: 32%;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .service, .skill {
+    .service {
         flex-basis: 100%;
+    }
+
+    .skill {
+        flex-basis: 49%;
     }
 }
 </style>
